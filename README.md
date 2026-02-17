@@ -2,6 +2,10 @@
 
 This project is now a browser game: **you vs an AI that keeps learning from your games**.
 
+## Preview
+
+![Filipino Checkers browser gameplay preview](preview.png)
+
 The main metric is your pride score:
 
 **Wins vs AI**
