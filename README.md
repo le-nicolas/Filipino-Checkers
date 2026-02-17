@@ -1,19 +1,30 @@
-# Filipino-Checkers
-I remembered how frustrated i was when i always play this game. everytime i play this, i ended up getting anhilated. So i decided to create a piece of code that can whop your asses. enjoy!
+# Filipino Checkers vs Learning AI
 
-![unnamed](https://github.com/le-nicolas/Filipino-Checkers/assets/112614851/0cfda4c5-ce86-4344-98b6-c5a722b85f49)
+This project is now a browser game: **you vs an AI that keeps learning from your games**.
 
+The main metric is your pride score:
 
+**Wins vs AI**
 
+Every finished game updates the AI policy using a lightweight reinforcement-learning loop and stores it in `localStorage`, so the bot remembers what it learned between sessions on the same browser.
 
-Problems encountered:
-I still dont know how to code input validation(process of ensuring that the input provided by users is correct, appropriate, and within the expected range), 
+## Features
 
+- Browser-based Filipino checkers board (no Python required)
+- Mandatory captures + chain captures
+- Piece promotion to kings
+- AI opponent with epsilon-greedy Q-value learning
+- Persistent AI memory (`localStorage`)
+- Persistent player stats (`Wins vs AI`, streaks, draws, etc.)
 
-handling chain captures(keeping track of the current piece's position), 
+## Run Locally
 
-and the user interface.
+Open `index.html` in a browser.
 
+## Publish on GitHub Pages
 
-solution(?):
-maybe add a validate function
+1. Push this repo to GitHub.
+2. In GitHub, go to `Settings` -> `Pages`.
+3. Set `Build and deployment` source to `Deploy from a branch`.
+4. Select branch `main` and folder `/ (root)`.
+5. Save. GitHub Pages will publish the site.
