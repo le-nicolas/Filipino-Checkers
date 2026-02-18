@@ -15,8 +15,10 @@ Every finished game updates the AI policy using a lightweight reinforcement-lear
 ## Features
 
 - Browser-based Filipino checkers board (no Python required)
-- Mandatory captures + chain captures
+- Mandatory captures with maximum-capture enforcement
+- Chain captures with delayed piece removal until sequence ends
 - Piece promotion to kings
+- Flying kings (long-range diagonal movement and captures)
 - AI opponent with epsilon-greedy Q-value learning
 - Persistent AI memory (`localStorage`)
 - Persistent player stats (`Wins vs AI`, streaks, draws, etc.)
